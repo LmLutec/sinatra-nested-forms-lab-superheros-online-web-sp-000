@@ -16,7 +16,7 @@ class App < Sinatra::Base
     @hero = params["team"]["heroes"].each do |member|
       Hero.new(member)
       end 
- binding.pry
+# binding.pry
     erb :team
   end 
 
